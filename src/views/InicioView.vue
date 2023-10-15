@@ -12,31 +12,31 @@ export default {
 <template>
   <div class="flex flex-col mmd:flex-row mmd:justify-between">
 
-    <div class="flex flex-col <-> xl:px-48 lg:px-24 md:px-20 sm:px-28 px-10 <-> xl:py-52 lg:py-48 md:py-16 sm:py-14 py-6">
+    <div class="flex flex-col <-> xl:pl-48 lg:pl-24 md:pl-20 sm:pl-24 pl-10 <-> xl:py-52 lg:py-48 md:py-16 sm:py-14 py-6">
 
-      <text class="text-4xl amm:text-6xl sm:text-7xl font-PhonkRegular " style="line-height: 80%; color: #017DF9">Addex</text>
-      <text class="text-4xl amm:text-6xl sm:text-7xl text-white font-PhonkRegular" style="line-height: 90%">Creations</text>
+      <text class="text-4xl amm:text-5xl axm:text-6xl sm:text-7xl font-PhonkRegular " style="line-height: 80%; color: #017DF9">Addex</text>
+      <text class="text-4xl amm:text-5xl axm:text-6xl sm:text-7xl text-white font-PhonkRegular" style="line-height: 90%">Creations</text>
       <text class="text-xs amm:text-xl sm:text-2xl text-white font-NexaBook sm:leading-10">Transformando sua visão em arte.</text>
 
       <button class="saiba-mais mt-14" @click="redirectToDiscord">Saiba mais +</button>
 
     </div>
     // arrumar o padding da side
-    <div class="flex sm:flex-col flex-row sm:justify-end xl:px-48 lg:px-24 px-4">
+    <div class="flex mmd:flex-col flex-row mmd:justify-self-end xl:px-48 lg:px-24 md:px-20 mmd:px-20 sm:px-28 px-10 <-> xl:pt-32 lg:pt-32">
 
-      <div class="flex flex-col text-right px-4 py-7">
+      <div class="flex flex-col text-right pr-4 py-7">
         <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">200</span></text>
         <text class="font-NexaLight text-white">Clientes</text>
         <text class="font-NexaLight text-white">Satisfeitos</text>
       </div>
 
       <div class="flex flex-col text-right px-4 py-7">
-        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">200</span></text>
+        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">4</span></text>
         <text class="font-NexaLight text-white">Anos no</text>
         <text class="font-NexaLight text-white">mercado</text></div>
 
       <div class="flex flex-col text-right px-4 py-7">
-        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">200</span></text>
+        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">380</span></text>
         <text class="font-NexaLight text-white">Projetos</text>
         <text class="font-NexaLight text-white">concluídos</text>
       </div>
