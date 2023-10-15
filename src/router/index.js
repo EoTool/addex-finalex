@@ -9,12 +9,12 @@ const routes = [
   {
     path: '/galeria',
     name: 'galeria',
-    component: () => import('../views/InicioView.vue')
+    component: () => import('../views/ErrView.vue')
   },
   {
     path: '/contato',
     name: 'contato',
-    component: () => import('../views/InicioView.vue')
+    component: () => import('../views/ErrView.vue')
   }
 ]
 
