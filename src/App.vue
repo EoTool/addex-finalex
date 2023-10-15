@@ -6,6 +6,7 @@
       </div>
       <div class="text-lg font-NexaBook flex justify-center lg:justify-start">
         <router-link
+            ref="inicioLink"
             class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/' }"
             to="/"
@@ -16,6 +17,7 @@
           <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/' }"></div>
         </router-link>
         <router-link
+            ref="galeriaLink"
             class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3  sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/galeria' }"
             to="/galeria"
@@ -23,9 +25,10 @@
             @dragstart="handleDragStart"
         >
           Galeria
-          <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/galeria' }"></div>
+          <div class="box not-done-box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/galeria' }"></div>
         </router-link>
         <router-link
+            ref="contatoLink"
             class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/contato' }"
             to="/contato"
@@ -33,7 +36,7 @@
             @dragstart="handleDragStart"
         >
           Contato
-          <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/contato' }"></div>
+          <div class="box not-done-box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/contato' }"></div>
         </router-link>
       </div>
       <div class="invisible select-none pointer-events-none">
@@ -66,6 +69,10 @@
 .active-box {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.not-done-box {
+  background-color: red;
 }
 </style>
 
