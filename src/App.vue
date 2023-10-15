@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col items-center justify-between bg-transparent px-10 lg:px-20 md:px-10 sm:px-18 py-2 sm:py-10">
+  <nav class="flex flex-col items-center justify-between bg-transparent px-10 lg:px-20 md:px-10 sm:px-18 py-2 sm:py-10 md:py-8">
     <div class="flex flex-col sm:flex-row items-center justify-between w-full">
       <div class="invisible md:visible select-none pointer-events-none">
         <img src="./assets/addex_blue_logo.svg" alt="Addex Logo" class="block lg:inline-block" />
@@ -9,14 +9,18 @@
             class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/' }"
             to="/"
+            draggable="true"
+            @dragstart="handleDragStart"
         >
           Início
           <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/' }"></div>
         </router-link>
         <router-link
-            class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
+            class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3  sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/galeria' }"
             to="/galeria"
+            draggable="true"
+            @dragstart="handleDragStart"
         >
           Galeria
           <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/galeria' }"></div>
@@ -25,6 +29,8 @@
             class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
             :class="{ 'active-link': $route.path === '/contato' }"
             to="/contato"
+            draggable="true"
+            @dragstart="handleDragStart"
         >
           Contato
           <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/contato' }"></div>
@@ -63,6 +69,15 @@
 }
 </style>
 
+<script>
+export default {
+  methods: {
+    handleDragStart(event) {
+      event.preventDefault();
+    },
+  },
+};
+</script>
 
 <style>
 
@@ -73,22 +88,16 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   background: linear-gradient(180deg, #0A0A0A 0%, #000 100%);
   height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-input,
-textarea,
-button,
-select,
-a {
+* {
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 </style>
