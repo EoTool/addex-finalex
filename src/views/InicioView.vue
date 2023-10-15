@@ -53,7 +53,7 @@ export default {
                 <img src="@/assets/addex_blue_logo.svg" alt="Addex Gray" class="dark:text-gray-900">
               </div>
           </div>
-         </div>
+        </div>
         <div class="grid justify-center pt-11 lg:justify-between">
           <div class="flex flex-col self-center text-sm text-center lg:mr-10 mb-4 md:block space-x-6">
     <span class="font-NexaBook text-base text-neutral-400">
@@ -73,8 +73,6 @@ export default {
             </a>
           </div>
         </div>
-
-
       </div>
     </footer>
   </div>
