@@ -45,17 +45,17 @@ export default {
 
   </div>
   <div class="pb-12">
-    <footer class="py-0 mx-48 dark:bg-zinc-950 dark:text-gray-50 rounded-[48px]">
-      <div class="container px-0 py-10 mx-auto space-y-6 divide-y divide-neutral-900 md:space-y-12 divide-opacity-50">
+    <footer class="py-0 xl:mx-32 lg:mx-24 md:mx-20 mx-10 dark:bg-zinc-950 dark:text-gray-50 rounded-[48px]">
+      <div class="container py-10 mx-auto px-10 space-y-6 divide-y-2 divide-neutral-900 md:space-y-12 divide-opacity-50">
         <div class="grid grid-cols-12">
-          <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
+          <div class="pb-0 -mb-4">
               <div class="flex items-center justify-center w-12 h-12">
-                <img src="@/assets/addex_blue_logo.svg" alt="Addex Gray" class="flex-shrink-0  dark:text-gray-900">
+                <img src="@/assets/addex_blue_logo.svg" alt="Addex Gray" class="dark:text-gray-900">
               </div>
           </div>
          </div>
-        <div class="grid justify-center pt-6 lg:justify-between">
-          <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
+        <div class="grid justify-center pt-11 lg:justify-between">
+          <div class="flex flex-col self-center text-sm text-center mr-10 mb-4 md:block lg:col-start-1 md:space-x-6">
             <span class="font-NexaBook text-base text-neutral-400">Copyright © 2019 - 2023 Addex Company. <span class="font-NexaLight">Todos os direitos reservados.</span></span>
           </div>
           <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
