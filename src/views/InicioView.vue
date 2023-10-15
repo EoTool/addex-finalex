@@ -76,10 +76,8 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 375px){
-  .height-difuser {
-    min-height: calc(100vh - 136px)
-  }
+.height-difuser {
+  min-height: calc(100vh - 136px)
 }
 
 @media (min-width: 480px) {
