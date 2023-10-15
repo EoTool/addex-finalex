@@ -90,6 +90,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, #0A0A0A 0%, #000 100%);
   height: 100vh;
+  overflow-x: hidden;
+
 }
 
 * {

@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="flex">
-    <div class="flex flex-col <-> xl:px-48 lg:px-24 md:px-20 sm:px-28 px-10 <-> xl:py-64 lg:py-56 md:py-16 sm:py-14 py-6">
+    <div class="flex flex-col <-> xl:px-48 lg:px-24 md:px-20 sm:px-28 px-10 <-> xl:py-52 lg:py-48 md:py-16 sm:py-14 py-6">
       <text class="text-4xl mm:text-5xl sm:text-7xl font-PhonkRegular " style="line-height: 80%; color: #017DF9">Addex</text>
       <text class="text-4xl mm:text-5xl sm:text-7xl text-white font-PhonkRegular" style="line-height: 90%">Creations</text>
       <text class="sm:text-2xl text-white font-NexaBook sm:leading-10">Transformando sua visão em arte.</text>
