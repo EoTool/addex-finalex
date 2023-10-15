@@ -56,7 +56,7 @@ export default {
          </div>
         <div class="grid justify-center pt-6 lg:justify-between">
           <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-            <span>Copyright © 2019 - 2023 Addex Company. Todos os direitos reservados.</span>
+            <span class="font-NexaBook text-neutral-400">Copyright © 2019 - 2023 Addex Company. <span class="font-NexaLight">Todos os direitos reservados.</span></span>
           </div>
           <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
             <a rel="noopener noreferrer" href="#">
