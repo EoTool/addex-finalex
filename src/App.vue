@@ -1,30 +1,94 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="flex flex-col items-center justify-between bg-transparent px-10 lg:px-20 md:px-10 sm:px-18 py-2 sm:py-10">
+    <div class="flex flex-col sm:flex-row items-center justify-between w-full">
+      <div class="invisible md:visible select-none pointer-events-none">
+        <img src="./assets/addex_blue_logo.svg" alt="Addex Logo" class="block lg:inline-block" />
+      </div>
+      <div class="text-lg font-NexaBook flex justify-center lg:justify-start">
+        <router-link
+            class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
+            :class="{ 'active-link': $route.path === '/' }"
+            to="/"
+        >
+          Início
+          <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/' }"></div>
+        </router-link>
+        <router-link
+            class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
+            :class="{ 'active-link': $route.path === '/galeria' }"
+            to="/galeria"
+        >
+          Galeria
+          <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/galeria' }"></div>
+        </router-link>
+        <router-link
+            class="px-8 pt-2 mb-2 sm:px-14 sm:pt-3 sm:mb-3 anchor-container block lg:inline-block text-gray-200 relative"
+            :class="{ 'active-link': $route.path === '/contato' }"
+            to="/contato"
+        >
+          Contato
+          <div class="box absolute inset-x-0 bottom-0 mx-auto" :class="{ 'active-box': $route.path === '/contato' }"></div>
+        </router-link>
+      </div>
+      <div class="invisible select-none pointer-events-none">
+        <img src="./assets/addex_blue_logo.svg" alt="Addex Logo" class="block lg:inline-block" />
+      </div>
+    </div>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
+<style scoped>
+.box {
+  margin-top: 4px;
+  width: 30px;
+  height: 3px;
+  background-color: #017DF9;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  transition: transform 0.3s, visibility 0.3s;
+  visibility: hidden;
+  transform-origin: center;
+  transform: scaleX(0);
+}
+
+.anchor-container:hover .box {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.active-box {
+  visibility: visible;
+  transform: scaleX(1);
+}
+</style>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: linear-gradient(180deg, #0A0A0A 0%, #000 100%);
+  height: 100vh;
 }
 
-nav {
-  padding: 30px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

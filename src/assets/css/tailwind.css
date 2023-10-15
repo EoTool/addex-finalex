@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('./NexaLight.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaHeavy';
+    src: url('./NexaHeavy.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PhonkRegular';
+    src: url('./PhonkRegular.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaBook';
+    src: url('./NexaBook.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
