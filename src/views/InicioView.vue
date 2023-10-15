@@ -22,7 +22,7 @@ export default {
 
     </div>
     // arrumar o padding da side
-    <div class="flex sm:flex-col flex-row justify-end xl:px-48 lg:px-24 px-4">
+    <div class="flex sm:flex-col flex-row sm:justify-end xl:px-48 lg:px-24 px-4">
 
       <div class="flex flex-col text-right px-4 py-7">
         <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">200</span></text>
