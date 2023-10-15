@@ -55,10 +55,13 @@ export default {
           </div>
          </div>
         <div class="grid justify-center pt-11 lg:justify-between">
-          <div class="flex flex-col self-center text-sm text-center mr-10 mb-4 md:block lg:col-start-1 md:space-x-6">
-            <span class="font-NexaBook text-base text-neutral-400">Copyright © 2019 - 2023 Addex Company. <span class="font-NexaLight">Todos os direitos reservados.</span></span>
+          <div class="flex flex-col self-center text-sm text-center lg:mr-10 mb-4 md:block space-x-6">
+    <span class="font-NexaBook text-base text-neutral-400">
+      Copyright © 2019 - 2023 Addex Company.
+      <span class="font-NexaLight">Todos os direitos reservados.</span>
+    </span>
           </div>
-          <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
+          <div class="flex justify-center pt-4 lg:pt-0 lg:col-end-13 space-x-4">
             <a rel="noopener noreferrer" href="#">
               <span class="font-NexaBook text-base text-neutral-400">FAQ</span>
             </a>
@@ -70,6 +73,8 @@ export default {
             </a>
           </div>
         </div>
+
+
       </div>
     </footer>
   </div>
