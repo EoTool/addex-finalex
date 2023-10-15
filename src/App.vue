@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col items-center justify-between bg-transparent px-10 lg:px-20 md:px-10 sm:px-18 py-2 sm:py-10 md:py-8">
+  <nav class="flex flex-col items-center justify-between bg-transparent px-10 xl:px-48 lg:px-24 md:px-20 sm:px-18 py-2 sm:py-10 md:py-8">
     <div class="flex flex-col sm:flex-row items-center justify-between w-full">
       <div class="invisible md:visible select-none pointer-events-none">
         <img src="./assets/addex_blue_logo.svg" alt="Addex Logo" class="block lg:inline-block" />

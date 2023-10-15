@@ -4,12 +4,18 @@ module.exports = {
     './src/**/*.vue',
   ],
   theme: {
+    screens: {
+      'mm': '375px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    },
     fontFamily: {
       'NexaBook': ['NexaBook', 'sans-serif'],
       'NexaLight': ['NexaLight', 'sans-serif'],
       'NexaHeavy': ['NexaHeavy', 'sans-serif'],
       'PhonkRegular': ['PhonkRegular', 'sans-serif']
-
     },
     extend: {},
   },
