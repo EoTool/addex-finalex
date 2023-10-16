@@ -95,7 +95,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(180deg, #0A0A0A 0%, #000 100%);
+  background: #040404;
   height: 100vh;
   overflow-x: hidden;
 }
