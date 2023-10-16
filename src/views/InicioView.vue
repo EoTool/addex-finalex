@@ -64,7 +64,7 @@ export default {
         <div class="grid grid-cols-12 items-center justify-between w-fit">
           <div class="pb-0 -mb-4">
             <div class="flex items-center justify-center w-12 h-12">
-              <img src="@/assets/addex_blue_logo.svg" alt="Addex Gray" class="dark:text-gray-900">
+              <img src="@/assets/addex_blue_logo.svg" alt="Addex Logo" class="dark:text-gray-900">
             </div>
           </div>
           <div class="appender pb-0 -mb-4 pl-4 col-end-9 amm:col-end-10 sm:col-end-11 lg:col-end-12">
