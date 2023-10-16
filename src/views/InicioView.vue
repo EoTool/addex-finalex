@@ -53,8 +53,8 @@ export default {
     </div>
 
   </div>
-  <div class="pb-12">
-    <footer class="py-0 xl:mx-32 lg:mx-24 md:mx-20 mx-10 dark:bg-zinc-950 dark:text-gray-50 rounded-[48px]">
+  <div class="pb-12 bg-black">
+    <footer class="py-0 xl:mx-32 lg:mx-24 md:mx-20 mx-10 sm:dark:bg-zinc-950 bg-zinc-900 rounded-[48px]">
       <div
           class="container py-10 mx-auto px-10 space-y-6 divide-y-2 divide-neutral-900 md:space-y-12 divide-opacity-50">
         <div class="grid grid-cols-12 items-center justify-between w-fit">
