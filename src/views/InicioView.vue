@@ -37,7 +37,7 @@ export default {
         class="flex mmd:flex-col flex-row mmd:justify-self-end xl:px-48 lg:px-24 md:px-20 mmd:px-20 sm:px-28 px-10 <-> xl:pt-32 lg:pt-32">
 
       <div class="flex flex-col text-right pr-4 py-7">
-        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">200</span></text>
+        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">320</span></text>
         <text class="font-NexaLight text-white">Clientes</text>
         <text class="font-NexaLight text-white">Satisfeitos</text>
       </div>
@@ -49,7 +49,7 @@ export default {
       </div>
 
       <div class="flex flex-col text-right px-4 py-7">
-        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">380</span></text>
+        <text class="font-NexaHeavy text-4xl" style="color: #017DF9">+<span class="text-white">480</span></text>
         <text class="font-NexaLight text-white">Projetos</text>
         <text class="font-NexaLight text-white">concluídos</text>
       </div>
