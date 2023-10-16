@@ -5,8 +5,12 @@ export default {
       const externalLink = 'https://discord.com/invite/q5FjdbT2ak';
       window.open(externalLink, '_blank');
     },
+    handleDragStart(event) {
+      event.preventDefault();
+    },
   },
 };
+
 </script>
 
 <template>
@@ -87,15 +91,15 @@ export default {
     </span>
           </div>
           <div class="flex justify-center pt-4 lg:pt-0 lg:col-end-13 space-x-4">
-            <a rel="noopener noreferrer" href="#">
+            <router-link ref="faqLink" to="/faq" draggable="true" @dragstart="handleDragStart">
               <span class="font-NexaBook text-base text-neutral-400">FAQ</span>
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </router-link>
+            <router-link ref="politicaLink" to="/politica_de_privacidade" draggable="true" @dragstart="handleDragStart">
               <span class="font-NexaBook text-base text-neutral-400">Política de Privacidade</span>
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </router-link>
+            <router-link ref="termosLink" to="/termos_de_servico" draggable="true" @dragstart="handleDragStart">
               <span class="font-NexaBook text-base text-neutral-400">Termos de Serviço</span>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>

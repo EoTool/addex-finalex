@@ -12,6 +12,12 @@ const setCurrentPage = () => {
     currentPage.value = 'Galeria';
   } else if (route.path === '/contato') {
     currentPage.value = 'Contato';
+  } else if (route.path === '/faq') {
+    currentPage.value = 'FAQ'
+  } else if (route.path === '/politica_de_privacidade') {
+    currentPage.value = 'POLÍTICA DE PRIVACIDADE'
+  } else if (route.path === '/termos_de_servico') {
+    currentPage.value = 'TERMOS DE SERVIÇO'
   }
 };
 
